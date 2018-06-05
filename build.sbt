@@ -51,6 +51,11 @@ lazy val root =
     parallelExecution in Benchmark := false
 )
 
+scalacOptions ++= Seq(
+  "-Ywarn-unused",
+  "-Ywarn-unused-import"
+)
+
 publishMavenStyle := true
 
 publishTo := {
