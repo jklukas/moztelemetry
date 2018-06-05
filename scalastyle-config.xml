@@ -101,6 +101,15 @@
     </check>
 
     <!--=============================================================================================================-->
+    <!--                                     rules we don't want to enforce yet                                      -->
+    <!--=============================================================================================================-->
+    <check enabled="false" class="org.scalastyle.scalariform.UnderscoreImportChecker" level="warning">
+        <parameters>
+            <parameter name="ignoreRegex">collection\.JavaConverters\._|scala\.concurrent\.duration\._|spark\.implicits\._</parameter>
+        </parameters>
+    </check>
+
+    <!--=============================================================================================================-->
     <!--                                       rules we don't want to enforce                                        -->
     <!--=============================================================================================================-->
     <check level="error" class="org.scalastyle.scalariform.CyclomaticComplexityChecker" enabled="false">
