@@ -92,6 +92,15 @@
     <check level="error" class="org.scalastyle.file.NewLineAtEofChecker" enabled="true"></check>
 
     <!--=============================================================================================================-->
+    <!--                                              temporary rules                                                -->
+    <!--=============================================================================================================-->
+    <check level="warn" class="org.scalastyle.scalariform.IllegalImportsChecker" enabled="true">
+        <parameters>
+            <parameter name="illegalImports"><![CDATA[org.joda._]]></parameter>
+        </parameters>
+    </check>
+
+    <!--=============================================================================================================-->
     <!--                                       rules we don't want to enforce                                        -->
     <!--=============================================================================================================-->
     <check level="error" class="org.scalastyle.scalariform.CyclomaticComplexityChecker" enabled="false">
