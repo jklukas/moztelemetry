@@ -52,8 +52,10 @@ lazy val root =
 )
 
 scalacOptions ++= Seq(
+  "-feature",
   "-Ywarn-unused",
-  "-Ywarn-unused-import"
+  "-Ywarn-unused-import",
+  "-Xfatal-warnings"
 )
 
 publishMavenStyle := true
